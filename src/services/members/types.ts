@@ -4,5 +4,4 @@ export interface Member {
   joinedAt: string // ISO datetime
   age: number
   intro: string
-  avatarColor: string // hex
 }
