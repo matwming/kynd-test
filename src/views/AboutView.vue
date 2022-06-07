@@ -1,5 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="m-16">
+    <p class="text-2xl font-semibold">About My Project</p>
+
+    <p class="mt-4">
+      Use this page to tell us about the choices made, things added, assumptions made, questions, suggestions, etc...
+    </p> 
   </div>
 </template>
