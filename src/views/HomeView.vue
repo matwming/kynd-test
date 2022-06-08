@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-full items-center justify-center px-4 text-center">
+  <div class="flex flex-col h-full items-center justify-center px-4 lg:px-16 text-center">
     <img 
       src="../assets/kynd-1.svg"
       class="w-1/2 lg:w-1/3"

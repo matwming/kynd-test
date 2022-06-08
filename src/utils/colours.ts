@@ -9,7 +9,7 @@ const colours = [
 ]
 
 
-export function getColourFromInitials(initials: string): string|undefined {
+export function mapInitialsToHexColour(initials: string): string {
   const value = (initials.toUpperCase().charCodeAt(0) || 0) + (initials.toUpperCase().charCodeAt(1) || 0)
   
   return colours[value % colours.length]

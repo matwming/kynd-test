@@ -1,13 +1,13 @@
 <template>
-  <div id="app" class="flex flex-col items-center h-screen">
-    <nav class="flex-none">
+  <div id="app" class="flex items-center h-screen flex-col lg:flex-col-reverse">    
+    <div class="flex-1 relative w-full overflow-auto">
+      <router-view/>
+    </div>
+
+    <nav class="flex-none w-full text-center">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    
-    <div class="flex-1 relative w-full">
-      <router-view/>
-    </div>
   </div>
 </template>
 
