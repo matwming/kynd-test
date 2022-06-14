@@ -14,7 +14,7 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
    - Any improvements you would suggest to either the UX worflow, the UI design, or the code
    - Any assumptions you had to make because information was missing
    - Any roadblocks or issues you encountered
-6. When you are done share a link with us to your repository so we can check it out.  
+6. When you are done send us a link to your repository so we can check it out.  
 
 ### What we are looking for
 - Members are loading and there are no bugs
