@@ -17,12 +17,14 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
 6. When you are done send us a link to your repository so we can check it out.  
 
 ### What we are looking for
-- Members are loading and there are no bugs
-- Can you use the Vuex store following standard practices and did you clearly explain the rationale behind any additions/changes you make
-- Can you create Vue components following standard practices and are any new components you write consistent with the existing components
-- How you compose components and did you clearly explain the rationale behind each new component you introduce
-- Can you style the components to accurately follow the mockups for both Mobile and Desktop
-- How well you use tailwind's utility classes to save on writing custom CSS
+- Nav menu item for "Members" is showing and it takes us to the new page
+- The members are loaded and displayed when the button is pushed.
+- There are no bugs or compile time errors
+- Can you use the Vuex store following standard practices and did you clearly explain the rationale behind any additions/changes you make.
+- Can you create Vue components following standard practices and are any new components you write consistent with the existing components.
+- Did you clearly explain the rationale behind each new component you introduce and how you compose them.
+- Can you style the components to accurately follow the mockups for both Mobile and Desktop.
+- How well you use tailwind's utility classes to save on writing custom CSS.
 - Are you able to figure out a custom CSS solution to achieve styles that tailwind can't do.
 - Are you looking at the rest of the project to avoid duplicating logic that already exists.
 - Is your code easy to read, using Typescript's features correctly and generally efficient.
