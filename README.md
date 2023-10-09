@@ -28,10 +28,10 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
 - Are the members loaded and displayed when the button is pushed?
 - Is the app free of bugs and errors?
 - Did you use the Vuex store following standard practices and clearly explain the rationale behind any additions/changes you made?
-- Did you create Vue components following standard practices and are any new components you write consistent with the existing components?
+- Did your Vue components following standard practices and are any new components you write consistent with the existing components?
 - Did you clearly explain the rationale behind each new component you introduce and how you compose them?
 - Are the components accurately following the mockups for both Mobile and Desktop?
-- Is your CSS clean and making use tailwind's utility classes?
+- Did you use modern CSS features and Tailwind's utility classes?
 - Did you look at the rest of the project to avoid duplicating logic that already exists?
 - Is your code easy to read, well-typed and efficient?
 - Did you clearly communicate the info we asked for on the "about" page?
@@ -39,8 +39,10 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
 ### Tips
 - We will be testing your app in the Chrome browser.
 - We are currently using Vue 2 (Upgrading to Vue 3 is in the works). [Vue 2 docs](https://v2.vuejs.org/v2/guide/)
+- [Docs for Vue2 TS decorators](https://github.com/kaorun343/vue-property-decorator#readme)
+- [Docs for Vuex decorators](https://github.com/ktsn/vuex-class)
 - If using VSCode the "Vetur" & "Tailwind CSS IntelliSense" plugins can make things easier.
-- The colours used in figma should correspond to colours in Tailwind (except for the background colour of circle on the member cards). If we missed one just use the closest match. [Tailwind docs](https://tailwindcss.com/docs/background-color)
+- The colours used in figma should correspond to colours in Tailwind (except for the background colour of circle on the member cards). [Tailwind docs](https://tailwindcss.com/docs/background-color)
 
 ## Project setup
 ```
@@ -50,9 +52,4 @@ yarn install
 ### Build and start development server (hot-reloads on save)
 ```
 yarn serve
-```
-
-### Build for production
-```
-yarn build
 ```
