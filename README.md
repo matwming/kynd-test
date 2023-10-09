@@ -7,7 +7,7 @@ The goal for us, is to get an idea of:
 - How you approach development tasks and plan out code changes
 - Can you clearly communicate what you are doing to the team.
 
-We don't expect you to spend more than four hours on this so don't worry about going above and beyond the scope provided. Also if there are any parts you get stuck on and can't figure out with some quick googling please just skip it and make a note. 
+We don't expect you to spend more than four hours on this. It is okay if you don't complete everything. If there are any parts you get stuck on and can't figure out with some quick googling please just skip it and make a note. 
 
 ### The Task
 We want to add a new "Members" page to our web app. Our UX designer has provided a mockup for what the new page should look like. Your job is to implement the front end changes for this new page.
@@ -40,8 +40,7 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
 - We will be testing your app in the Chrome browser.
 - We are currently using Vue 2 (Upgrading to Vue 3 is in the works). You can access the V2 docs [here](https://v2.vuejs.org/v2/guide/)
 - If using VSCode the "Vetur" & "Tailwind CSS IntelliSense" plugins can make things easier.
-- There are comments on the mockups with more details
-- The colours used in figma should correspond to colours in Tailwind (except for the background colour of circle on the member cards). If we missed one just use the closest match.     
+- The colours used in figma should correspond to colours in Tailwind (except for the background colour of circle on the member cards). If we missed one just use the closest match. [Tailwind docs](https://tailwindcss.com/docs/background-color)
 
 ## Project setup
 ```
