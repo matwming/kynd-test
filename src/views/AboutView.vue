@@ -7,3 +7,15 @@
     </p> 
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import { State, Action, Getter, Mutation } from 'vuex-class'
+
+@Component({
+  components: {
+  },
+})
+export default class AboutView extends Vue {
+}
+</script>
