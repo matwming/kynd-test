@@ -38,7 +38,7 @@ We want to add a new "Members" page to our web app. Our UX designer has provided
 
 ### Tips
 - We will be testing your app in the Chrome browser.
-- We are currently using Vue 2 (Upgrading to Vue 3 is in the works). You can access the V2 docs [here](https://v2.vuejs.org/v2/guide/)
+- We are currently using Vue 2 (Upgrading to Vue 3 is in the works). [Vue 2 docs](https://v2.vuejs.org/v2/guide/)
 - If using VSCode the "Vetur" & "Tailwind CSS IntelliSense" plugins can make things easier.
 - The colours used in figma should correspond to colours in Tailwind (except for the background colour of circle on the member cards). If we missed one just use the closest match. [Tailwind docs](https://tailwindcss.com/docs/background-color)
 
