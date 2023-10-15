@@ -6,6 +6,7 @@
 
     <nav class="flex-none w-full text-center">
       <router-link to="/">Home</router-link> |
+      <router-link to="/member">Member</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
   </div>
@@ -32,3 +33,5 @@ nav {
   }
 }
 </style>
+<script lang="ts">
+</script>

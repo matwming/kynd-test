@@ -1,5 +1,8 @@
 import { Member } from "@/services/members"
 
 export interface StoreState {
-  title: string
+  title: string,
+  isLoaded: boolean,
+  members:Member[],
+  error:''
 }
