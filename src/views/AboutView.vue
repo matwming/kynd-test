@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4 my-8 lg:m-16">
+  <div class="mx-4 my-8 lg:m-16 max-w-7xl">
     <p class="text-2xl font-semibold">About My Project</p>
 
     <p class="mt-4">
@@ -82,7 +82,15 @@
             either a load screen or a skeleton screen. This could tell users
             that something is happening and could also prevent race conditions.
             A simple race condition question is what if users keep clicking the
-            button.
+            button. Rxjs has amazing solutions for this which are called:
+            switchMap/concatMap/mergeMap/exhaustMap. I wrote an
+            <a
+              href="https://medium.com/dev-genius/learn-rxjs-in-an-easy-way-8008f291ef8f"
+              class="underline text-cyan-600"
+              >article</a
+            >
+            about this on medium. In this test, I chose to display a loading
+            screen to prevent it.
           </details>
         </li>
         <li>
@@ -109,7 +117,11 @@
             javascript community since the introduction of react hooks. This
             repo implements lots of class and decorators. decorators is a
             feature of class. Fortunately it is now in
-            <a href="https://github.com/tc39/proposal-decorators">stage 3</a>
+            <a
+              href="https://github.com/tc39/proposal-decorators"
+              class="underline text-cyan-600"
+              >stage 3</a
+            >
             but it is not compatible with the old typescript decorator. I would
             assume that it would involve lots of work to migrate to the new
             decorators.
@@ -130,6 +142,15 @@
             >
             are depreciated now. It is suggested to migrate to new solutions in
             the near future.
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Code :reconsider rest api or graphql</summary>
+            This is the great time to reconsider how to call your apis in the
+            frontend. Should they be changed to graphql or still be restful?
+            Should there be a BFF (backend for frontend)?
           </details>
         </li>
       </ul>
@@ -161,12 +182,15 @@
         </li>
       </ul>
     </div>
+    <footer>
+      Due to time constrains there are no unit tests, integration tests or e2e.
+      tests.
+    </footer>
   </div>
 </template>
 <style lang="scss"></style>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { State, Action, Getter, Mutation } from "vuex-class";
 
 @Component({
   components: {},
