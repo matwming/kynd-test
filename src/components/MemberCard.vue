@@ -47,7 +47,6 @@ export default class MemberCard extends Vue {
   get circleStyle() {
     let index = ((this.initials[0].toUpperCase().charCodeAt(0) - 65) %
       this.colors.length) as number;
-    console.log("index", index);
     const bgColor = this.colors[index];
     return `rounded-full bg-[${bgColor}] w-16 h-16 flex items-center justify-center mr-6 mb-4 flex-shrink-0 font-bold`;
   }
