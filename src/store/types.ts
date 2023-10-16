@@ -1,8 +1,9 @@
-import { Member } from "@/services/members"
+import { Member } from "@/services/members";
 
 export interface StoreState {
-  title: string,
-  isLoaded: boolean,
-  members:Member[],
-  error:''
+  title: string;
+  isLoading: boolean;
+  members: Member[];
+  error: "";
+  isLoaded: boolean;
 }
