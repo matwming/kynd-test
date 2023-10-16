@@ -53,3 +53,9 @@ yarn install
 ```
 yarn serve
 ```
+
+### Notes:
+If you cannot run this project due to node environment issues, please download and install [nvm](https://github.com/nvm-sh/nvm):
+```javascript
+nvm use //it will find .nvmrc and use node 16.20.2 
+```
