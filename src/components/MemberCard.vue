@@ -6,11 +6,13 @@
       </div>
       <div class="flex flex-col">
         {{ member.firstName }} {{ member.lastName }}
-        <section>Member for {{ daysToNow }} days</section>
+        <section class="font-extralight text-xs">
+          Member for {{ daysToNow }} days
+        </section>
       </div>
     </div>
 
-    <div class="truncate-double-line">
+    <div class="truncate-double-line text-sm">
       {{ member.lastMessage }}
     </div>
   </div>
@@ -47,7 +49,7 @@ export default class MemberCard extends Vue {
       this.colors.length) as number;
     console.log("index", index);
     const bgColor = this.colors[index];
-    return `rounded-full bg-[${bgColor}] w-16 h-16 flex items-center justify-center mr-6 mb-4 flex-shrink-0`;
+    return `rounded-full bg-[${bgColor}] w-16 h-16 flex items-center justify-center mr-6 mb-4 flex-shrink-0 font-bold`;
   }
 
   get initials() {
