@@ -1,10 +1,12 @@
 <template>
-  <div id="app" class="flex items-center h-screen flex-col lg:flex-col-reverse">    
+  <div id="app" class="flex items-center h-screen flex-col lg:flex-col-reverse">
     <div class="flex-1 relative w-full overflow-auto">
-      <router-view/>
+      <router-view />
     </div>
 
-    <nav class="flex-none w-full text-center">
+    <nav
+      class="flex-none w-full text-center sticky bottom-0.5 flex flex-row items-center justify-center sm:relative"
+    >
       <router-link to="/">Home</router-link> |
       <router-link to="/member">Member</router-link> |
       <router-link to="/about">About</router-link>
@@ -34,4 +36,10 @@ nav {
 }
 </style>
 <script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component({
+  components: {},
+})
+export default class App extends Vue {}
 </script>
