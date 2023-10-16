@@ -8,7 +8,7 @@
       class="flex-none w-full text-center sticky bottom-0.5 flex flex-row items-center justify-center sm:relative"
     >
       <router-link to="/">Home</router-link> |
-      <router-link to="/member">Member</router-link> |
+      <router-link to="/member">Members</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
   </div>
@@ -28,6 +28,8 @@ nav {
   a {
     font-weight: bold;
     color: #2c3e50;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
 
     &.router-link-exact-active {
       color: #42b983;
