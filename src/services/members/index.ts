@@ -1,6 +1,6 @@
 import { Member } from './types'
 
-const loadMembers = () => {
+export const loadMembers = () => {
   return new Promise<Member[]>((resolve, reject) => {
     setTimeout(() => {
       resolve([
