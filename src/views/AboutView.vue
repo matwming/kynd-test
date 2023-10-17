@@ -111,6 +111,15 @@
 
         <li>
           <details>
+            <summary>UX :the member page pagination</summary>
+            In this code test, the number of members is not substantial, but in
+            actual practical scenarios, where the number of members is quite
+            large, pagination would be necessary. I recommend incorporating
+            pagination for an improved user experience.
+          </details>
+        </li>
+        <li>
+          <details>
             <summary>Code :more functional style?</summary>
             It is absolutely not wrong to enforce class programming. However,
             functional programming is likely to be more popular in the
