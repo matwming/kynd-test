@@ -46,6 +46,7 @@ import { State, Action } from "vuex-class";
 import MemberCard from "@/components/MemberCard.vue";
 import members, { Member } from "../services/members";
 import LoadingCircle from "@/components/LoadingCircle.vue";
+import { ActionTypes } from "@/store/actions";
 
 @Component({
   computed: {
@@ -60,17 +61,17 @@ import LoadingCircle from "@/components/LoadingCircle.vue";
 })
 export default class MemberView extends Vue {
   @State("isLoading")
-  private readonly isLoading: false | undefined;
+  private readonly isLoading!: boolean;
 
   @State("isLoaded")
-  private readonly isLoaded: false | undefined;
+  private readonly isLoaded!: boolean;
   @State("members")
-  private readonly members: [] | undefined;
+  private readonly members!: Member[];
 
   @State("error")
-  private readonly error: "" | undefined;
+  private readonly error!: string;
 
-  @Action fetchMembers: any;
+  @Action(ActionTypes.FETCH_MEMBERS) fetchMembers!: () => void;
   loadMembers() {
     this.fetchMembers();
   }
@@ -78,7 +79,7 @@ export default class MemberView extends Vue {
   get totalNumOfMembers() {
     return this.members?.length as number;
   }
-  get averageAge() {
+  get averageAge(): string {
     const sum = this.members?.reduce((acc, member: Member) => {
       return acc + member.age;
     }, 0) as number;

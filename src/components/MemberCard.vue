@@ -31,6 +31,7 @@
 import members, { Member } from "@/services/members";
 import { Component, Vue, Prop } from "vue-property-decorator";
 import dayjs from "dayjs";
+import { mapInitialsToHexColour } from "@/utils/colours";
 @Component({
   computed: {
     members() {
@@ -40,25 +41,20 @@ import dayjs from "dayjs";
   components: {},
 })
 export default class MemberCard extends Vue {
-  @Prop({ default: {} }) readonly member: Member | undefined;
+  @Prop({ default: {} }) readonly member!: Member;
 
-  colors = ["#FBEA9F", "#C7EAF0", "#ffb763", "#FCA5A5", "#E5D9FF", "#FFCBDE"];
-
-  get circleStyle() {
-    let index = ((this.initials[0].toUpperCase().charCodeAt(0) - 65) %
-      this.colors.length) as number;
-    const bgColor = this.colors[index];
+  get circleStyle(): string {
+    const bgColor = mapInitialsToHexColour(this.initials[0]);
     return `rounded-full bg-[${bgColor}] w-16 h-16 flex items-center justify-center mr-6 mb-4 flex-shrink-0 font-bold`;
   }
 
-  get initials() {
-    return ((this.member?.firstName[0] as string) +
-      this.member?.lastName[0]) as string;
+  get initials(): string {
+    return this.member.firstName[0] + this.member.lastName[0];
   }
 
-  get daysToNow() {
+  get daysToNow(): number {
     return dayjs(Date.now()).diff(
-      dayjs(this.member?.joinedAt).format("YYYY-MM-DD"),
+      dayjs(this.member.joinedAt).format("YYYY-MM-DD"),
       "day"
     );
   }

@@ -4,6 +4,6 @@ export interface StoreState {
   title: string;
   isLoading: boolean;
   members: Member[];
-  error: "";
+  error: string;
   isLoaded: boolean;
 }
