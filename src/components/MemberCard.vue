@@ -28,10 +28,10 @@
 }
 </style>
 <script lang="ts">
-import members, { Member } from "@/services/members";
+import members, { Member } from "../services/members";
 import { Component, Vue, Prop } from "vue-property-decorator";
 import dayjs from "dayjs";
-import { mapInitialsToHexColour } from "@/utils/colours";
+import { mapInitialsToHexColour } from "../utils/colours";
 @Component({
   computed: {
     members() {

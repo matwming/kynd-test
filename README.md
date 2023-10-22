@@ -54,6 +54,11 @@ yarn install
 yarn serve
 ```
 
+### Run unit tests
+```
+yarn test
+```
+
 ### Notes:
 If you cannot run this project due to node environment issues, please download and install [nvm](https://github.com/nvm-sh/nvm):
 ```javascript

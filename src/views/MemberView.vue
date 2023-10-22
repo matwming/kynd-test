@@ -43,10 +43,10 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { State, Action } from "vuex-class";
-import MemberCard from "@/components/MemberCard.vue";
+import MemberCard from "../components/MemberCard.vue";
 import members, { Member } from "../services/members";
-import LoadingCircle from "@/components/LoadingCircle.vue";
-import { ActionTypes } from "@/store/actions";
+import LoadingCircle from "../components/LoadingCircle.vue";
+import { ActionTypes } from "../store/actions";
 
 @Component({
   computed: {

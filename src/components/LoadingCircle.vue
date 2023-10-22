@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center" data-testid="loading-circle">
     <div role="status">
       <svg
         aria-hidden="true"

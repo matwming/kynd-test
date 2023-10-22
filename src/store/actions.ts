@@ -1,7 +1,7 @@
 import { ActionContext, ActionTree } from "vuex";
 import { Mutations, MutationType } from "./mutations";
 import { StoreState } from "./types";
-import { loadMembers, Member } from "@/services/members";
+import { loadMembers, Member } from "../services/members";
 export enum ActionTypes {
   FETCH_MEMBERS = "FETCH_MEMBERS",
 }
