@@ -182,13 +182,6 @@
             supports caching automatically.
           </details>
         </li>
-        <li>
-          <details>
-            <summary>the rule of initial colours</summary>
-            how to set the background colours of the initials is not mentioned.
-            I used Character Code to match colors with initials.
-          </details>
-        </li>
       </ul>
     </div>
     <footer>
